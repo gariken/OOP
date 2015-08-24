@@ -1,10 +1,9 @@
 <?php
-class Factorial
-{
-    public function Fact($n)
-    {
+
+class Factorial{
+    public function Result($n){
         $fact = 1;
-        for($i=2; $i<=$n; $i++)
+        for($i = 2; $i<=$n; $i++)
         {
             $fact*=$i;
         }
@@ -12,7 +11,6 @@ class Factorial
     }
 }
 
-$new = new Factorial();
+$Fact = new Factorial();
 
-echo $new ->Fact(5);
-
+echo $Fact -> Result(5);
